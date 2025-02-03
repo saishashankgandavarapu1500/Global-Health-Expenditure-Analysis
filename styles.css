@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
+    color: white;
+    transition: background 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px;
+}
+
+
+/* Title */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFD700; /* Gold */
+    text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.5); /* Softer shadow */
+    margin-top: 20px;
+    margin-bottom: 30px; /* Creates better separation */
+}
+
+
+/* Dashboard */
+.dashboard {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2); /* Softer shadow */
+    max-width: 98%;
+    margin: auto;
+}
+
+.dashboard:hover {
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.3);
+    transform: scale(1.005);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Iframe Styling */
+iframe {
+    width: 99%;
+    height: calc(100vh - 170px);/* Adjusts height dynamically */
+    border-radius: 12px;
+    border: 2px solid rgba(255, 215, 0, 0.2);
+    display: block;
+    margin: auto;
+    box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.3);
+    overflow: hidden;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    iframe {
+        height: calc(100vh - 160px); /* Slightly larger for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: calc(100vh - 150px); /* More space for smaller screens */
+    }
+}
