@@ -2,7 +2,7 @@ import pandas as pd
 from pycaret.clustering import setup, create_model, assign_model
 
 # Load dataset
-df = pd.read_excel("GHED_data.XLSX", sheet_name="Data")
+df = pd.read_excel("GHED_dataRaw.XLSX", sheet_name="Data")
 
 # Select relevant columns
 selected_columns = ['location', 'region', 'income', 'year', 'che_gdp', 'che_pc_usd', 'che', 'gghed', 'pvtd', 'gdp_usd2022_pc']
@@ -37,6 +37,6 @@ df_clusters = assign_model(kmeans)
 df['Cluster'] = df_clusters['Cluster']
 
 # Save the processed data with clusters
-df.to_csv("health_expenditure_clusters.csv", index=False)
+df.to_csv("GHED_dataProcessed.csv", index=False)
 
 print("\n✅ Data Processed & Missing Values Filled")
