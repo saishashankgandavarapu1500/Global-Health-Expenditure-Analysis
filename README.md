@@ -1,5 +1,7 @@
 # 🌍 Global Health Expenditure Analysis: Clustering Trends & Spending Patterns
 
+Link: [Global Health Expenditure Database](https://saishashankgandavarapu1500.github.io/Global-Health-Expenditure-Analysis/)
+
 ## 📌 Project Overview
 This project analyzes **global health expenditure trends** across **100+ countries**, leveraging **Power BI, Python, and Machine Learning (K-Means Clustering)** to uncover patterns in **healthcare spending efficiency**. The analysis identifies **regional disparities, government vs. private healthcare funding, and trends over time** to drive actionable insights.
 
